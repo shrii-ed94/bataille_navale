@@ -10,10 +10,18 @@
   <h1>Bienvenue dans la Bataille Navale</h1>
   <h2>Ici, viens voir si tu sauras rester à flot.</h2>
 
-  <div id="game"></div>
+  <div id="boards">
+    <div>
+      <h3>Ta grille</h3>
+      <div id="player-board" class="board"></div>
+    </div>
+    <div>
+      <h3>Grille ennemie</h3>
+      <div id="enemy-board" class="board"></div>
+    </div>
+  </div>
 
   <p id="message"></p>
-  
   <button id="restart">Rejouer !</button>
 
   <script src="script.js"></script>
