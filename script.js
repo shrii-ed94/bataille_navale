@@ -52,3 +52,11 @@ function shoot(event) {
 // lancement du jeu
 createGrid();
 placeShip();
+
+// bouton pour rejouer
+document.getElementById("restart").addEventListener("click", () => {
+  ships = [];
+  createGrid();
+  placeShip();
+  document.getElementById("message").textContent = "Nouvelle partie !";
+});

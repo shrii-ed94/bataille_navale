@@ -35,3 +35,17 @@ body {
   font-size: 18px;
 }
 
+#restart {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4682b4;
+  color: white;
+  cursor: pointer;
+}
+
+#restart:hover {
+  background-color: #315f7d;
+}
