@@ -4,29 +4,34 @@ body {
   background: #f0f8ff;
 }
 
-#game {
-  display: grid;
-  grid-template-columns: repeat(6, 60px); /* 6 colonnes */
-  grid-template-rows: repeat(6, 60px);    /* 6 lignes */
-  gap: 4px;
+#boards {
+  display: flex;
   justify-content: center;
+  gap: 50px;
   margin-top: 20px;
 }
 
+.board {
+  display: grid;
+  grid-template-columns: repeat(8, 50px); /* grille de 8x8 */
+  grid-template-rows: repeat(8, 50px);    
+  gap: 4px;
+}
+
 .cell {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   background-color: #87ceeb; /* bleu clair pour l'océan */
   border: 1px solid #333;
   cursor: pointer;
 }
 
 .cell.hit {
-  background-color: red; /* rouge lorsque c'est touché */
+  background-color: red; /* rouge pour touché */
 }
 
 .cell.miss {
-  background-color: white; /* blanc lorsque c'est raté*/
+  background-color: white; /* blanc pour raté */
 }
 
 #message {
