@@ -1,0 +1,1 @@
+alert("Le jeu démarre !");
